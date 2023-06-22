@@ -2,10 +2,6 @@ function paySlipSender() {
   var spreadsheet = SpreadsheetApp.getActive().getSheetByName('List');
   var dataRange = spreadsheet.getRange("A2:D4").getValues();
 
-  // dataRange = [
-  //   [1, "Shisam", "shisamgyawali63@gmail.com", 100000],
-
-  // ]
   
   Logger.log(dataRange);
   for(var i=0; i < dataRange.length; i++){
